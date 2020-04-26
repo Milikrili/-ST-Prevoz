@@ -5,6 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontakt</title>
     <link rel="stylesheet" href="style.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+   <script>
+     $(document).ready(function(){
+       $(".btn").click(function(){
+        $(".input, .text-area").val("");
+       }); 
+         
+      
+     
+     });
+     
+   </script>
 </head>
 <body>
     <div class="sajt">
@@ -34,10 +46,36 @@
 
 
     </nav>
+<div class="contact">
+ <div class="wrapper">
+   <div class="contact_us">
+     <div class="title">Želite da stupite u kontakt sa nama? <br>
+      
+     </div>
 
-
-
+     <div class="input-fields">
+       <div class="items">
+         <label for="name" class="label">Ime</label>
+         <input id="name" type="text" class="input">
+       </div>
+       <div class="items">
+        <label for="email" class="label">Email</label>
+        <input id="email" type="text" class="input">
+       </div>
+       <div class="items">
+        <label for="mobile" class="label">Broj telefona</label>
+        <input id="mobile" type="text" class="input">
+       </div>
+       <div class="items">
+        <label for="msg" class="label">Poruka</label>
+        <textarea  id="msg" class="text-area"></textarea>
+       </div>
+       <div class="btn">send</div>
+     </div>
+   </div>
+ </div>
 </div>
+
 
 <footer>
     <div class="footer-content">
@@ -71,7 +109,7 @@
     </footer>
 
     
-
+  </div>
 
     
     <script src="burger.js"></script>

@@ -1,4 +1,7 @@
+
+
 body{
+
     background:rgb(99, 170, 228);
    
     
@@ -9,14 +12,14 @@ body{
 .sajt
 {
     background-color: white;
-    border: 10px solid white;
+    border: 3px solid white;
     
 }
 header{
     display:flex;
     justify-content:space-between;
     background: white;
-    border: 10px solid rgb(99, 170, 228);
+    border: 7px solid rgb(99, 170, 228);
     
   
 }
@@ -80,6 +83,104 @@ font-size: 12pt;
     right:15px;
 }
 
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+    
+     outline: none;
+     box-sizing: border-box;
+   
+ }
+ .contact{
+     width: 100%;
+     height:700px;
+     background: url("img/background_contact.jpg") no-repeat; 
+     background-size: cover;
+     font-size: 16px;
+     font-family:  "Open Sans", sans-serif;
+ }
+     .wrapper{
+     
+     position: relative;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+ }
+ .contact_us{
+     width: 100%;
+     max-width: 500px;
+     height: auto;
+     background-color: rgba(0,0,0,0.7);
+     padding: 40px 50px;
+     border-radius: 5px;
+ }
+ .title{
+   font-size: 1em;
+   line-height: 1.25em;
+   text-align: center;
+   text-transform: uppercase;
+   font-weight: 900;
+   letter-spacing: 2px;
+   color: #ffc107;
+   padding-bottom: 15px;
+ }
+ .input-fields {
+   padding: 0 30px;
+}
+
+.input-fields .items{
+   width: 100%;
+   padding-bottom: 15px;
+} 
+.input-fields .items .label{
+   display: block;
+   font-size: 1em;
+   color: #ffecb3;
+   text-transform: capitalize;
+   transition: all 0.5s ease;
+   padding-bottom: 5px;
+}
+
+.input-fields .items .input,
+.input-fields .items .text-area{
+   background: transparent;
+   border: 0;
+   border: 1px solid #ffecb3;
+   width: 100%;
+   
+
+   font-size: 1em;
+   color: #ffecb3;
+   border-radius: 3px;
+}
+
+.btn{
+   margin: 0 30px;
+   background: #ffc107;
+   color: #ffecb3;
+   font-size: 1.25em;	
+   padding: 10px 0;
+   text-align: center;
+   text-transform: uppercase;
+   border-radius: 5px;
+   cursor: pointer;
+   font-weight: bold;
+   letter-spacing: 2px;
+}
+.items #msg{
+   height: 100px;
+}
+
+
+/* jquery code */
+.input-fields .items .input.active .label{
+   font-size: 15px;
+   top: 0;
+}
+
+
+
+
 footer {
     background-color: rgb(99, 170, 228);
     color: white;
@@ -104,7 +205,7 @@ footer .footer-content{
 }
 footer .footer-content .footer-section {
     flex: 1;
-    padding-left: 20px;
+    padding-left: 5px;
     
     
 } 
@@ -114,14 +215,16 @@ footer .footer-content .links a {
     display: block;
     margin-bottom: 7px;
     font-size: 1.2em;
-    transition: all .3s;
-
+    transition:0s;
+    
 }
 footer .footer-content .links a:hover {
     color:rgb(12, 34, 94);
-    margin-left: 15px;
-    transition: all .3s;
+    margin-left:5px;
+    margin-right: 10px;
+    transition: 0s;
 }
+
 a{
     text-decoration:none;
     color:white;
@@ -135,12 +238,16 @@ a{
 
  footer .footer-content .contact-form{
      font-size: 13pt;
+     margin-left: 10px;
  }
 
-/**uvecan ekran**/
+ 
 
-@media (min-width: 800px) {
+/**uvecan ekran**/
+   
+@media(min-width:800px){
     body{
+        background:rgb(99, 170, 228);
         margin-bottom: 50px;
         margin-left: 200px;
         margin-right: 200px;
@@ -148,20 +255,38 @@ a{
     }
     .sajt{
         border-radius: 20px;
+        border: 10px solid white;
     }
     header{
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display:flex;
+    justify-content:space-between;
+    background: white;
+    border: 7px solid rgb(99, 170, 228);
     }
     nav {
         
         display: flex;
         padding-top: 0;
+        padding-top: 10px;
+        background:rgb(99, 170, 228);
 
     }
     nav a {
         border-bottom: 0;
         width: 25%;
+
+    background:rgb(99, 170, 228);
+    color: black;
+    display: block;
+    font-weight: bolder;
+    text-decoration:none;
+    padding:10px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    
     }
     nav a:hover {
         border-bottom: 10px solid rgb(99, 170, 228);
@@ -275,6 +400,117 @@ p{
           right:300px;
       }
 
+      /**gallery **/
+      .gallery{
+          margin: 10px 50px;
+      }
+      .gallery img{
+          transition: 1s;
+          padding:15px;
+          width: 200px;
+      }
+    .gallery img:hover{
+        filter: grayscale(100%);
+        transform: scale(1.1);
+    }
+    /** contact form **/
+   
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+     *{
+         
+          outline: none;
+          box-sizing: border-box;
+        
+      }
+      .contact{
+          width: 100%;
+          height:700px;
+          background: url("img/background_contact.jpg") no-repeat; 
+          background-size: cover;
+          font-size: 16px;
+          font-family:  "Open Sans", sans-serif;
+      }
+          .wrapper{
+            position: relative; 
+            
+      }
+      .contact_us{
+          width: 100%;
+          max-width: 500px;
+          height: auto;
+          background-color: rgba(0,0,0,0.7);
+          padding: 40px 50px;
+          border-radius: 5px;
+      }
+      .title{
+        font-size: 1em;
+        line-height: 1.25em;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 900;
+        letter-spacing: 2px;
+        color: #ffc107;
+        padding-bottom: 15px;
+      }
+      .input-fields {
+        padding: 0 30px;
+    }
+    
+    .input-fields .items{
+        width: 100%;
+        padding-bottom: 15px;
+    } 
+    .input-fields .items .label{
+        display: block;
+        font-size: 1em;
+        color: #ffecb3;
+        text-transform: capitalize;
+        transition: all 0.5s ease;
+        padding-bottom: 5px;
+    }
+    
+    .input-fields .items .input,
+    .input-fields .items .text-area{
+        background: transparent;
+        border: 0;
+        border: 1px solid #ffecb3;
+        width: 100%;
+        padding: 8px 10px;
+        font-size: 1em;
+        color: #ffecb3;
+        border-radius: 3px;
+    }
+    
+    .btn{
+        margin: 0 30px;
+        background: #ffc107;
+        color: #ffecb3;
+        font-size: 1.25em;	
+        padding: 10px 0;
+        text-align: center;
+        text-transform: uppercase;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+    .items #msg{
+        height: 100px;
+    }
+    
+    
+    /* jquery code */
+    .input-fields .items .input.active .label{
+        font-size: 15px;
+        top: 0;
+    }
+   
+    
+    
+    
+      
+     
+    
       /** footer **/
 
       footer {
@@ -332,5 +568,6 @@ p{
          font-size: 13pt;
      }
     
-   
-}
+    }
+
+    
