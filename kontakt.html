@@ -1,31 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kontakt</title>
-    <link rel="stylesheet" href="style.css">
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
-   <script>
-     $(document).ready(function(){
-       $(".btn").click(function(){
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".btn").click(function () {
         $(".input, .text-area").val("");
-       }); 
-         
-      
-     
-     });
-     
-   </script>
+      });
+
+
+
+    });
+
+  </script>
 </head>
+
 <body>
-    <div class="sajt">
+  <div class="sajt">
     <header>
-        <img src="img/logo.png" alt="">
-        <div class="jezik">
-            <a href="index.html"><img src="img/flag-rs.png" alt="srp"></a>
-            <a href="index.html"><img src="img/flag-uk.png" alt="eng"></a>
-         </div>
+      <img src="img/logo.png" alt="">
+      <div class="jezik">
+        <a href="index.html"><img src="img/flag-rs.png" alt="srp"></a>
+        <a href="index.html"><img src="img/flag-uk.png" alt="eng"></a>
+      </div>
     </header>
 
     <img src="img/burger.png" id="burger" alt="">
@@ -33,85 +35,100 @@
 
     <nav id="navigacija">
 
-        <a href="index.html">NASLOVNA</a>
-        <a href="medunarodniT.html">MEĐUNARODNI TRANSPORT</a>
-        <a href="vozniP.html">VOZNI PARK</a>
-        <a href="novosti.html" >NOVOSTI</a>
-        <a href="#" style="background-color: white;
-        color: rgb(99, 170, 228);
-        font-weight: bolder;
-        font-size: 14pt;
-        border-bottom: 10px solid  rgb(99, 170, 228);">KONTAKT</a>
+      <a href="index.html">NASLOVNA</a>
+      <a href="medunarodniT.html">MEĐUNARODNI TRANSPORT</a>
+      <a href="vozniP.html">VOZNI PARK</a>
+      <a href="novosti.html">NOVOSTI</a>
+      <a href="#" style="background-color:rgba(12, 34, 94,0.9);
+      color:rgb(99, 170, 228);
+      font-weight: bolder;
+      font-size: 13pt;">KONTAKT</a>
 
 
 
     </nav>
-<div class="contact">
- <div class="wrapper">
-   <div class="contact_us">
-     <div class="title">Želite da stupite u kontakt sa nama? <br>
-      
-     </div>
+     <div class="svee">
+    <div class="lokacija">
+    
+      <div class="wrapper">
+        <div class="contact_us">
+          <div class="title">Želite da stupite u kontakt sa nama? <br>
 
-     <div class="input-fields">
-       <div class="items">
-         <label for="name" class="label">Ime</label>
-         <input id="name" type="text" class="input">
-       </div>
-       <div class="items">
-        <label for="email" class="label">Email</label>
-        <input id="email" type="text" class="input">
-       </div>
-       <div class="items">
-        <label for="mobile" class="label">Broj telefona</label>
-        <input id="mobile" type="text" class="input">
-       </div>
-       <div class="items">
-        <label for="msg" class="label">Poruka</label>
-        <textarea  id="msg" class="text-area"></textarea>
-       </div>
-       <div class="btn">send</div>
-     </div>
-   </div>
- </div>
+          </div>
+
+          <div class="input-fields">
+            <div class="items">
+              <label for="name" class="label">Ime</label>
+              <input id="name" type="text" class="input">
+            </div>
+            <div class="items">
+              <label for="email" class="label">Email</label>
+              <input id="email" type="text" class="input">
+            </div>
+            <div class="items">
+              <label for="mobile" class="label">Broj telefona</label>
+              <input id="mobile" type="text" class="input">
+            </div>
+            <div class="items">
+              <label for="msg" class="label">Poruka</label>
+              <textarea id="msg" class="text-area"></textarea>
+            </div>
+            <div class="btn">send</div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+    
+    <div class="map">
+      <p id="map"><iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2868.774179930378!2d20.948052415742314!3d44.02606083625739!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475727315696c4a9%3A0xee00cb430da3f24c!2sST%20Prevoz!5e0!3m2!1ssr!2srs!4v1587918527003!5m2!1ssr!2srs"
+          width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+          tabindex="0"></iframe></p>
+    </div>
+    
+</div>
 </div>
 
+    <footer>
+      <div class="footer-content">
 
-<footer>
-    <div class="footer-content">
-    
-      <div class="footer-section links" style="border-right: 3px solid white;">
-        <h2>Brzi Linkovi</h2>
-        <ul>
-          <li><a href="index.html">Početna</a></li><br>
-          <li><a href="medunarodniT.html">Međunarodni transport</a></li><br>
-          <li><a href="vozniP.html">Vozni park</a></li><br>
-          <li><a href="novosti.html">Novosti</a></li><br>
-          <li><a href="kontakt.html">Kontakt</a></li>
-        </ul>
-      </div>
-      <div class="footer-section contact-form">
-        <h2>Kontakt</h2>
-        <b>ST prevoz</b><br>
-        <p>19. Oktobra 101
-          <br>
-          34230 Kragujevac<br>
-          <span><i class="fas fa-envelope"></i>&nbsp;E-mail: office@stprevoz.rs</span><br>
-          <span><i class="fas fa-phone"></i> &nbsp; Centrala: 034 / 617-0487 <br>
-            Faks: 00 381 34 333 039</span></p><br>
-       
-    </div>
-    <div class="footer-bottom">
-      &copy; 2019 <a href="index.html" class="footera">ST prevoz</a> | All Right reserved.
-    </div>
-    
-    
+        <div class="footer-section links" style="border-right: 3px solid white;">
+          <h2>Brzi Linkovi</h2>
+          <ul>
+            <li><a href="index.html">Početna</a></li><br>
+            <li><a href="medunarodniT.html">Međunarodni transport</a></li><br>
+            <li><a href="vozniP.html">Vozni park</a></li><br>
+            <li><a href="novosti.html">Novosti</a></li><br>
+            <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
+        </div>
+        <div class="footer-section contact-form">
+          <h2>Kontakt</h2>
+          <b>ST prevoz</b><br>
+          <p>19. Oktobra 101
+            <br>
+            34230 Kragujevac<br>
+            <span><i class="fas fa-envelope"></i>&nbsp;E-mail: office@stprevoz.rs</span><br>
+            <span><i class="fas fa-phone"></i> &nbsp; Centrala: 034 / 617-0487 <br>
+              Faks: 00 381 34 333 039</span></p><br>
+
+        </div>
+        <div class="footer-bottom">
+          &copy; 2019 <a href="index.html" class="footera">ST prevoz</a> | All Right reserved.
+        </div>
+
+
     </footer>
 
-    
+
   </div>
 
-    
-    <script src="burger.js"></script>
+
+  <script src="burger.js"></script>
 </body>
+
 </html>

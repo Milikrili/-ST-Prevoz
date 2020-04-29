@@ -2,9 +2,32 @@
 
 body{
 
-    background:rgb(99, 170, 228);
-   
+    background:whitesmoke;
     
+    
+}
+.slike1 {
+        
+    display: flexbox;
+    justify-content: center;
+    align-content: center;
+    background-color:whitesmoke;
+    
+ 
+}
+.gallery{
+    margin: 50px 50px;
+    background-color: white;
+}
+.gallery img{
+    border-left: 10px solid rgb(12, 34, 94);
+    transition: 1s;
+    padding:15px;
+    width: 200px;
+}
+.gallery img:hover{
+  filter: grayscale(100%);
+  transform: scale(1.1);
 }
 
   
@@ -14,24 +37,25 @@ body{
 }
     .oNama {
         width: 16rem;
-        background-color: white;
-        border: 3px solid white;
+        background-color: whitesmoke;
+        border: 3px solid whitesmoke;
         border-radius: 20px;
         overflow: hidden;
         padding-left: 10px;
+        
 }
 .medjunarodni {
     width: 16rem;
-    background-color: white;
-    border: 3px solid white;
+    background-color: whitesmoke;
+    border: 3px solid whitesmoke;
     border-radius: 20px;
     overflow: hidden;
     padding-left: 10px;
 }
 .kontakt {
     width: 16rem;
-    background-color: white;
-    border: 3px solid white;
+    background-color: whitesmoke;
+    border: 3px solid whitesmoke;
     border-radius: 20px;
     overflow: hidden;
     padding-left: 10px;
@@ -60,28 +84,33 @@ body{
 .sajt
 {
     background-color: white;
-    border: 3px solid white;
+    
     
 }
 header{
     display:flex;
     justify-content:space-between;
-    background: white;
-    border: 7px solid rgb(99, 170, 228);
+    background: url("img/billboard.jpg");
+    border-top: 15px solid rgb(12, 34, 94);
+    border-bottom: 15px solid rgb(12, 34, 94);
+   
+    padding-top: 20px;
+    padding-bottom: 20px;
+  /**  border: 7px solid rgb(12, 34, 94); **/
     
   
 }
 #burger{
     widows: 40px;
     width: 70px;
+ 
     
    
     
 }
 nav{
     display:none;
-    padding-top: 10px;
-    background:rgb(99, 170, 228);
+ 
 
     
 }
@@ -93,8 +122,7 @@ nav a{
     text-decoration:none;
     padding:10px;
     text-align: center;
-    margin-left: 10px;
-    margin-right: 10px;
+    
     
     
     
@@ -114,21 +142,23 @@ font-size: 12pt;
 #karuselSlika{
     width: 100%;
     height: 200px;
+    border-left: 20px solid rgb(12, 34, 94);
+    border-right: 20px solid rgb(12, 34, 94);
 }
 #levo, #desno{
     background:none;
     border:none;
-    color: black;
+    color:rgb(99, 170, 228);
     font-size: 45px;
     position: absolute;
     top: 35%;
     cursor: pointer;
 }
 #levo{
-    left:15px;
+    left:12px;
 }
 #desno{
-    right:15px;
+    right:12px;
 }
 
 
@@ -150,13 +180,7 @@ font-size: 12pt;
      font-size: 16px;
      font-family:  "Open Sans", sans-serif;
  }
-     .wrapper{
-     
-     position: relative;
-     top: 50%;
-     left: 50%;
-     transform: translate(-50%, -50%);
- }
+
  .contact_us{
      width: 100%;
      max-width: 500px;
@@ -233,13 +257,13 @@ font-size: 12pt;
 
 
 footer {
-    background-color: rgb(99, 170, 228);
+    background-color: rgba(12, 34, 94,0.9);
     color: white;
     height: 400px;
     position: relative;
 }
 footer .footer-bottom {
-    background: rgb(97, 166, 223);
+    background: rgb(12, 34, 94);
     color: white;
     height: 50px;
     width: 100%;
@@ -256,7 +280,7 @@ footer .footer-content{
 }
 footer .footer-content .footer-section {
     flex: 1;
-    padding-left: 5px;
+    
     
     
 } 
@@ -270,7 +294,7 @@ footer .footer-content .links a {
     
 }
 footer .footer-content .links a:hover {
-    color:rgb(12, 34, 94);
+    color:rgb(99, 170, 228);
     margin-left:5px;
     margin-right: 10px;
     transition: 0s;
@@ -279,12 +303,15 @@ footer .footer-content .links a:hover {
 a{
     text-decoration:none;
     color:white;
-    
+  
     
 
 }
+h2{
+    color: rgb(99, 170, 228);
+}
 .footera:hover{
-    color: rgb(12, 34, 94);
+    color: rgb(99, 170, 228)
 }
 
  footer .footer-content .contact-form{
@@ -298,54 +325,49 @@ a{
    
 @media(min-width:800px){
     body{
-        background:rgb(99, 170, 228);
+        background:url("img/billboard.jpg")no-repeat;
+       background-size: cover;
+        margin-top: 0px;
         margin-bottom: 50px;
         margin-left: 200px;
         margin-right: 200px;
         border-radius: 5px;
     }
     .sajt{
-        border-radius: 20px;
-        border: 10px solid white;
+        background-color: whitesmoke;
+        border-radius: 10px;
+    /**  border: 7px solid whitesmoke; **/
+      /** border: 7px solid rgb**/
+      border: none;
     }
     header{
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
     display:flex;
     justify-content:space-between;
-    background: white;
-    border: 7px solid rgb(99, 170, 228);
+    background:url("img/billboard.jpg");
+    border-top: 15px solid rgba(12, 34, 94,0.9);
+    padding-bottom: 30px;
+   /** border: 5px solid rgb(12, 34, 94); **/
+    
     }
     nav {
-        
-        display: flex;
-        padding-top: 0;
-        padding-top: 10px;
-        background:rgb(99, 170, 228);
+        display: flex;    
 
     }
     nav a {
-        border-bottom: 0;
+        background-color: rgba(12, 34, 94,0.9);
+        color:whitesmoke; 
         width: 25%;
-
-    background:rgb(99, 170, 228);
-    color: black;
-    display: block;
-    font-weight: bolder;
-    text-decoration:none;
-    padding:10px;
-    text-align: center;
-    margin-left: 10px;
-    margin-right: 10px;
     
     }
-    nav a:hover {
+    nav a:hover
+    {
+        background-color: rgb(12, 34, 94);
+        color:rgb(99, 170, 228);
         border-bottom: 10px solid rgb(99, 170, 228);
-        background-color: white;
     }
+   
     a:hover{
-
-    color: rgb(99, 170, 228);
+    color:rgb(12, 34, 94);
     font-weight: bolder;
     font-size: 12pt;
     
@@ -355,51 +377,65 @@ a{
         
         display: flex;
         justify-content: space-evenly;
-        background-color: rgb(99, 170, 228);
-        margin-bottom: 20px;
-        padding-bottom: 20px; 
+        background-color:whitesmoke;
+        padding-bottom: 60px;
+        padding-top: 20px;
+        margin-top: 10px; 
      
     }
 
- h2{
-padding-left: 10px;
+
+
+.card-body{
+    padding-left: 10px;
 }
-p{
-    padding-left: 5px;
+.card-text{
+    padding-right: 5px;
 }
+    
+
+    
+
+
 .card-img-top{
     height: 210px;
     width: 100%;
+   
 
    
     
 }
     .oNama {
-        background-color: white;
-        border: 3px solid white;
+        
+        padding: 0;
+        background-color: whitesmoke;
+        border:none;
         border-radius: 20px;
         overflow: hidden;
         width: 16rem;
+        
 }
 .medjunarodni {
-    background-color: white;
-    border: 3px solid white;
+    padding: 0;
+    background-color: whitesmoke;
+    border: none;
     border-radius: 20px;
     overflow: hidden;
     width: 16rem;
 }
 .kontakt {
-    background-color: white;
-    border: 3px solid white;
+    padding: 0;
+    background-color: whitesmoke;
+   border: none;
     border-radius: 20px;
     overflow: hidden;
     width: 16rem;
 }
 .dButton .button {
 
-    background-color: rgb(99, 170, 228);
+    background-color: rgba(12, 34, 94,0.9);
     border-radius: 15px;
-    color:white;
+    color:whitesmoke;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -412,9 +448,8 @@ p{
     transition-duration: 0.4s;
   }
    .dButton .button:hover{
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-  }
-    
+    box-shadow: 0 12px 16px 0 rgba(18, 60, 185, 0.438),0 17px 50px 0  rgba(5, 10, 71, 0.527);
+   }
     #burger{
         display: none;
         
@@ -425,7 +460,7 @@ p{
     .karusel{
 
        padding: 30px 100px 50px 80px;
-       background-color:rgb(99, 170, 228);
+       background-color:whitesmoke;
        
         
        
@@ -434,7 +469,10 @@ p{
       #karuselSlika{
           width:100%;
           height: 350px;
-          border: 10px solid white;
+          border-left:50px solid  rgba(12, 34, 94,0.9);
+          border-right: 50px solid  rgba(12, 34, 94,0.9);
+         
+         
 
 
         
@@ -443,7 +481,7 @@ p{
           
           background: none;
           border:none;
-          color: black;
+          color:rgb(99, 170, 228);
           font-size: 70px;
           position:absolute;
           top: 45%;
@@ -453,12 +491,13 @@ p{
           left:300px;
       }
       #desno{
-          right:300px;
+          right:310px;
       }
 
       /**gallery **/
       .gallery{
           margin: 10px 50px;
+          background: url("img/billboard.jpg");
       }
       .gallery img{
           transition: 1s;
@@ -479,22 +518,19 @@ p{
         
       }
       .contact{
+          
           width: 100%;
           height:700px;
-          background: url("img/background_contact.jpg") no-repeat; 
-          background-size: cover;
+          
           font-size: 16px;
           font-family:  "Open Sans", sans-serif;
       }
-          .wrapper{
-            position: relative; 
-            
-      }
+        
       .contact_us{
           width: 100%;
           max-width: 500px;
           height: auto;
-          background-color: rgba(0,0,0,0.7);
+          background-color: rgba(4, 7, 54, 0.719);
           padding: 40px 50px;
           border-radius: 5px;
       }
@@ -505,7 +541,7 @@ p{
         text-transform: uppercase;
         font-weight: 900;
         letter-spacing: 2px;
-        color: #ffc107;
+        color:rgb(97, 166, 223);
         padding-bottom: 15px;
       }
       .input-fields {
@@ -519,7 +555,7 @@ p{
     .input-fields .items .label{
         display: block;
         font-size: 1em;
-        color: #ffecb3;
+        color: rgb(97, 166, 223);
         text-transform: capitalize;
         transition: all 0.5s ease;
         padding-bottom: 5px;
@@ -529,18 +565,18 @@ p{
     .input-fields .items .text-area{
         background: transparent;
         border: 0;
-        border: 1px solid #ffecb3;
+        border: 1px solid rgb(97, 166, 223);
         width: 100%;
         padding: 8px 10px;
         font-size: 1em;
-        color: #ffecb3;
+        color: rgb(97, 166, 223);
         border-radius: 3px;
     }
     
     .btn{
         margin: 0 30px;
-        background: #ffc107;
-        color: #ffecb3;
+        background:rgb(3, 108, 194);
+        color:rgb(97, 166, 223);
         font-size: 1.25em;	
         padding: 10px 0;
         text-align: center;
@@ -561,7 +597,26 @@ p{
         top: 0;
     }
    
+
+   .svee{
+       background: url("img/background_contact.jpg") no-repeat;
+       background-size: cover;
+       
+       position: relative;
+   }
+    .svee .lokacija{
+        height: 100%;
+        display: flex;
+    }
+    .svee .lokacija .wrapper{
+        flex: 1;
+        padding: 20px;
+    }
+    .svee .lokacija .map{
+        padding: 100px;
+    }
     
+
     
     
       
@@ -570,13 +625,16 @@ p{
       /** footer **/
 
       footer {
-        background-color: rgb(99, 170, 228);
+        background-color:  rgba(12, 34, 94,0.9);
         color: white;
         height: 400px;
         position: relative;
     }
+    h2{
+        color: rgb(99, 170, 228);
+    }
     footer .footer-bottom {
-        background: rgb(97, 166, 223);
+        background: rgb(12, 34, 94);
         color: white;
         height: 50px;
         width: 100%;
@@ -605,7 +663,7 @@ p{
     
     }
     footer .footer-content .links a:hover {
-        color:rgb(12, 34, 94);
+        color: rgb(99, 170, 228);
         margin-left: 15px;
         transition: all .3s;
     }
@@ -617,7 +675,7 @@ p{
 
     }
     .footera:hover{
-        color: rgb(12, 34, 94);
+        color: rgb(99, 170, 228);
     }
 
      footer .footer-content .contact-form{
