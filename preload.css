@@ -12,8 +12,78 @@ h1{
     color: rgb(99, 170, 228);
 }
 .dButton{
-    background:url("img/button.jpg")no-repeat;
-    background-size: cover; /* Green */
+  background:url("img/button.jpg")no-repeat;
+  background-size: cover; 
+  border: none;
+  border-radius: 5px;
+  color:rgb(99, 170, 228);
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 22px;
+  margin: 15px 8px;
+  cursor: pointer;
+  font-weight: bolder;
+}
+a{
+    color:rgb(12, 34, 94);
+    
+    text-decoration: none;
+}
+
+.rotate_01{
+    display: none;
+}
+
+.rotate_02{
+display: none;
+}
+.rotate_03{
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 150px;
+    height: 150px;   
+    margin: 30px 0 0 -60px;
+    -webkit-animation: spin 1s linear infinite;
+    -moz-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
+}
+
+
+@-webkit-keyframes spin{
+    100%{-webkit-transform: rotate(360deg);}
+
+}
+@-moz-keyframes spin{
+    100%{-webkit-transform: rotate(360deg);}
+}
+@keyframes spin{
+    100%{-webkit-transform: rotate(360deg);}
+}
+
+
+
+
+@media(min-width:800px){
+body{
+    padding:0;
+    margin: 0;
+    background: rgb(12, 34, 94);
+    background-size: cover;
+}
+
+h1{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30pt;
+    color: rgb(99, 170, 228);
+}
+.dButton{
+  background:url("img/button.jpg")no-repeat;
+  background-size: cover; 
   border: none;
   border-radius: 5px;
   color:rgb(99, 170, 228);
@@ -41,6 +111,7 @@ a{
     width: 150px;
     height: 150px;
     margin: -60px 0 0 -280px;
+   
     transition: transform 1s;
     -webkit-transition:-webkit-transform 1s;
 
@@ -58,12 +129,14 @@ a{
     left: 50%;
     width: 150px;
     height: 150px;
+   
     margin: -60px 0 0 150px;
 }
 
 .rotate_02:hover{
     -webkit-animation: spin 1s linear infinite;
     animation: spin 1s linear infinite;
+ 
 } 
 
 .rotate_03{
@@ -73,6 +146,7 @@ a{
     left: 50%;
     width: 150px;
     height: 150px;
+   
     margin: -60px 0 0 -60px;
     -webkit-animation: spin 1s linear infinite;
     -moz-animation: spin 1s linear infinite;
@@ -91,3 +165,4 @@ a{
     100%{-webkit-transform: rotate(360deg);}
 }
 
+}
