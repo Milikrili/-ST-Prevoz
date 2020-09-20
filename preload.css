@@ -1,21 +1,26 @@
 
 body{
-    padding:0;
-    margin: 0;
-    background: whitesmoke;
+  background-image: url("img/covermp.jpg");
+  background-color: #cccccc;
+  height: 800px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
     
 }
 
 h1{
     text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 30pt;
-    color:rgb(12, 34, 94);
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 6px rgba(202, 228, 225, 0.98), 0 0 30px rgba(202, 228, 225, 0.42), 0 0 12px rgba(30, 132, 242, 0.58), 0 0 22px rgba(30, 132, 242, 0.84), 0 0 38px rgba(30, 132, 242, 0.88), 0 0 60px #1e84f2;
+    font-size: 20pt;
+    font-family: 'Kaushan Script', 'Sail', cursive;
 }
 .dButton{
   background:url("img/button.jpg")no-repeat;
   background-size: cover; 
-  border: 4px solid rgb(12, 34, 94);
+  border: 4px solid rgb(165, 165, 165);
   border-radius: 5px;
   color:rgb(99, 170, 228);
   padding: 20px;
@@ -45,8 +50,8 @@ display: none;
     position: fixed;
     top: 50%;
     left: 50%;
-    width: 150px;
-    height: 150px;   
+    width: 120px;
+    height: 120px;   
     margin: 30px 0 0 -60px;
     -webkit-animation: spin 1s linear infinite;
     -moz-animation: spin 1s linear infinite;
@@ -70,22 +75,33 @@ display: none;
 
 @media(min-width:800px){
 body{
-    padding:0;
-    margin: 0;
-    background: whitesmoke;
+    background-image: url("img/covermp.jpg");
+    background-color: #cccccc;
+    height: 800px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  
+    
+    
     
 }
 
 h1{
     text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
+    color: rgb(3, 19, 90);
+    text-shadow: 0 0 6px rgba(9, 180, 223, 0.98), 0 0 30px rgba(77, 179, 204, 0.42), 0 0 12px rgba(252, 253, 255, 0.58), 0 0 22px rgba(255, 255, 255, 0.84), 0 0 38px rgba(247, 248, 250, 0.88), 0 0 60px #ffffff;
+    font-family: 'Kaushan Script', 'Sail', cursive;
     font-size: 30pt;
-    color: rgb(12, 34, 94);
+    letter-spacing: 3px;
+    
 }
 .dButton{
   background:url("img/button.jpg")no-repeat;
   background-size: cover; 
-  border:4px solid rgb(12, 34, 94);
+  border:4px solid rgb(163, 163, 163);
   border-radius: 5px;
   color:rgb(99, 170, 228);
   padding: 20px;
@@ -109,8 +125,8 @@ a{
     position: fixed;
     top: 50%;
     left: 50%;
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     margin: -60px 0 0 -280px;
    
     transition: transform 1s;
@@ -128,8 +144,8 @@ a{
     position: fixed;
     top: 50%;
     left: 50%;
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
    
     margin: -60px 0 0 150px;
 }
@@ -145,8 +161,8 @@ a{
     position: fixed;
     top: 50%;
     left: 50%;
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
    
     margin: -60px 0 0 -60px;
     -webkit-animation: spin 1s linear infinite;
